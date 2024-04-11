@@ -56,5 +56,33 @@ Step 4 - Type 127.0.0.1 into the internet browser search to double check IIS was
 <p>
 Steo 5 - You can now go into the installation files and download the Files required to begin osTicket setup. Once you reach PHP 7.3.8 you will extract all files in that download to C:\PHP
 </p>
-<img src="https://imgur.com/Vnqt7Hm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/4IJaAuZ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/cWuTgx2.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/BYHJbep.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/Vnqt7Hm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/4IJaAuZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/cWuTgx2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/BYHJbep.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <br />
+Step 5 (con'd) - Continue downloading the rest of the files except for osTicket and HeidiSQL. Once MySQL setup begins setup as typical setup and standard configuration during Wizard configuration (post install). Remember User and password for later steps.
+<p>
+<img src="https://imgur.com/Ghc0wrn.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/c2sJ8Vq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Step 6 - Open and Run IIS as an admin then open PHP Manager. From there you will Register PHP from within IIS as shown below. Reload IIS once done.
+
+<p>
+<img src="https://imgur.com/KyTLSVs.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/68pYzyt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+Step 7 - Download the osTicket file and when done open the file. Extract uploads into c:\inetpub\wwwroot
+</p>
+<br />
+
+<p>
+<img src="https://imgur.com/9CvX0E8.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/hkES8Tn.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+Step 3 - Now that windows features is open follow the images below and enable the following which is not enabled. 
+<p>
+<img src="https://imgur.com/eHtBsPn.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/Pa15RXY.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/eHtBsPn.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<br />
+Step 4 - Type 127.0.0.1 into the internet browser search to double check IIS was correctly setup. You should get a screen like this. 
+<p>
+<img src="https://imgur.com/tDtrcZ8.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Steo 5 - You can now go into the installation files and download the Files required to begin osTicket setup. Once you reach PHP 7.3.8 you will extract all files in that download to C:\PHP
+</p>
