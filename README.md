@@ -36,39 +36,43 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://imgur.com/DSOdVOz.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/znPAIDJ.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Step 1 - Using Microsoft Azure you must create a Virtual Machine(VM) and paste the IP Address in Remote Desktop (Windows) or Microsoft Remote Desktop (Mac) in order to start up the VM.
+Step 1: Create a Virtual Machine (VM) using Microsoft Azure. Retrieve the IP Address and utilize Remote Desktop (Windows) or Microsoft Remote Desktop (Mac) to initiate the VM.
 
-Step 2 - Once you have your VM up and running you will need to open up the control panel and access programs in order to turn certain windows features on/off. You can right click start on the bottom left press run then type control to do this.
+Step 2: After launching your VM, access the control panel to manage Windows features. Right-click on the Start menu, select "Run," and type "control" to open the control panel. From there, navigate to Programs to enable or disable specific Windows features as needed.
 </p>
 <br />
-
 <p>
 <img src="https://imgur.com/9CvX0E8.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/hkES8Tn.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-Step 3 - Now that windows features is open follow the images below and enable the following which is not enabled. 
+
+Step 3: With the Windows Features window open, refer to the provided images to identify and enable the required features that are currently disabled. 
 <p>
 <img src="https://imgur.com/eHtBsPn.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/Pa15RXY.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/eHtBsPn.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 <br />
-Step 4 - Type 127.0.0.1 into the internet browser search to double check IIS was correctly setup. You should get a screen like this. 
+
+Step 4: Verify the correct setup of Internet Information Services (IIS) by typing "127.0.0.1" into the internet browser's address bar. Confirm the expected screen appearance, resembling the image provided.
 <p>
 <img src="https://imgur.com/tDtrcZ8.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Steo 5 - You can now go into the installation files and download the Files required to begin osTicket setup. Once you reach PHP 7.3.8 you will extract all files in that download to C:\PHP
+
+Step 5: Proceed to download the necessary files from the installation package for osTicket. Upon reaching the file PHP 7.3.8 version, extract all files from the download and place them in the directory "C:\PHP".
 </p>
 <img src="https://imgur.com/Vnqt7Hm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/4IJaAuZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/cWuTgx2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/BYHJbep.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <br />
-Step 5 (con'd) - Continue downloading the rest of the files except for osTicket and HeidiSQL. Once MySQL setup begins setup as typical setup and standard configuration during Wizard configuration (post install). Remember User and password for later steps.
+
+Step 6: Complete the download of the remaining files, excluding osTicket and HeidiSQL. During the MySQL setup process, opt for a typical setup and adhere to standard configurations in the Wizard configuration (post-installation). Ensure to note down the username and password for future steps.
 <p>
 <img src="https://imgur.com/Ghc0wrn.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/c2sJ8Vq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Step 6 - Open and Run IIS as an admin then open PHP Manager. From there you will Register PHP from within IIS as shown below. Reload IIS once done.
 
+Step 7: Launch and execute IIS as an administrator, then access PHP Manager. Within PHP Manager, proceed to register PHP from within IIS according to the provided instructions. After completion, reload IIS to apply the changes.
 <p>
 <img src="https://imgur.com/KyTLSVs.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/68pYzyt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-Step 7 - Download the osTicket file and when done open the file. Extract uploads into c:\inetpub\wwwroot. 
+
+Step 8: Upon completing the osTicket file download, open the file and extract the "uploads" folder. Place the extracted folder into "C:\inetpub\wwwroot". 
 </p>
 <br />
 
@@ -76,47 +80,50 @@ Step 7 - Download the osTicket file and when done open the file. Extract uploads
 <img src="https://imgur.com/PA5eGg0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/KqyEchz.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
-Step 8 - This PC > Windows (C:) > inetpub > wwwroot Find the upload folder and rename the folder to "osTicket"
+Step 9: Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot". Locate the "upload" folder and rename it to "osTicket".
 <p>
-
 <img src="https://imgur.com/YR00J4S.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <br />
-Step 9 - Return to IIS and follow this order IIS > Sites > Default Web Site > osTicket > PHP Manager from PHP Manager scroll down to PHP Manager Enable or Disable Extension. Enable the extensions shown below. 
+
+Step 10: In IIS, navigate through the following sequence: IIS > Sites > Default Web Site > osTicket. Access PHP Manager from within osTicket. Scroll down to the "PHP Manager Enable or Disable Extension" section. Enable the extensions listed below.
 <p>
 <img src="https://imgur.com/oTPhSRa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/gP1Id1C.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/yixryG7.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/2vGOoLZ.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Step 10 - Go to Files This PC > Windows (C:) > inetpub > wwwroot > osTicket > include > rename "ost-sampleconfig" to "ost-config." Next right click ost-config and open Properties > Security > Advanced > Disable Inheritance > Remove all permissions
+Step 11: Proceed to the following directory: "This PC" > "Windows (C:)" > "inetpub" > "wwwroot" > "osTicket" > "include". Rename the "ost-sampleconfig" folder to "ost-config". Then, right-click on "ost-config", open Properties, navigate to Security, and choose Advanced. Disable Inheritance and remove all permissions.
 
-STEP 11 - Add Permissions under everyone, check the name and allow "Read" and "Execute" permissions.
+Step 12: Under the Security tab in the Properties window of "ost-config", click on Add. Type "Everyone" and select Check Names. Afterward, grant "Read" and "Execute" permissions to "Everyone".
 </p>
 <img src="https://imgur.com/Fyqq3Ud.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/xpk1lXx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/W5guuL2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 
-Step 12 - Return to IIS then go to Sites > Default Web Site > osTicket on the right click on “Browse *:80” The screen below will be shown and simply contonue with osTicket setup.
+Step 13: Navigate back to IIS and locate "Sites" > "Default Web Site" > "osTicket". On the right-hand side, right-click on "Browse *:80". This action will display the screen depicted below. Proceed with the osTicket setup as prompted.
 <p>
 
 <img src="https://imgur.com/0DYVomD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/Mu4R4xJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <br />
-Step 13 - The last File to download will be HeidiSQL. A username and password will need to be created be sure to remember or write down the information. When finished open Heidi SQL connect to session and create new database titled osTicket.
+
+Step 14: The final file to download is HeidiSQL. Create a username and password during setup, ensuring to remember or note down the information. After installation, open HeidiSQL, connect to the session, and proceed to create a new database titled "osTicket".
 <p>
 <img src="https://imgur.com/vIWDDtj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/4nonXjw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/CqGyD3y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
-Step 14 - Input The database information from HeidiSQL into the osTicket setup page. Install and the final page should show.
 
+Step 15: Input the database information obtained from HeidiSQL into the designated fields on the osTicket setup page. Click "Install", and upon successful completion, the final page should be displayed.
 </p>
 <img src="https://imgur.com/1mMMtB2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/QRVobLK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
-Cleanup (Optional) - Return to files This PC > Windows (C:) > inetpub > wwwroot > osTicket > delete setup folder. You can also return to the ost-config file and enable full control permissions within the properties as well.
+
+Cleanup (Optional): Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot" > "osTicket". Delete the "setup" folder if no longer needed. Additionally, return to the "ost-config" file, open its properties, and enable full control permissions as necessary.
 <p>
 <img src="https://imgur.com/0NXwFMW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/WcVQBe5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
-Step 15 - Head to the Agent login page using the information from earlier setup http://localhost/osTicket/scp/login.php. End User osTicket URL http://localhost/osTicket/ 
+
+Step 16: Access the Agent login page using the previously set up information at http://localhost/osTicket/scp/login.php. For end users, utilize the osTicket URL http://localhost/osTicket/.
 <p>
 <img src="https://imgur.com/vIWDDtj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/4nonXjw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/CqGyD3y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
-Step 16 - LOGIN TO osTicket!
+Step 17: Log in to osTicket!
 <p>
 <img src="https://imgur.com/BL4zEGX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/IayoADD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
