@@ -116,7 +116,7 @@ Step 15: Input the database information obtained from HeidiSQL into the designat
 
 Cleanup (Optional): Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot" > "osTicket". Delete the "setup" folder if no longer needed. Additionally, return to the "ost-config" file, open its properties, and enable full control permissions as necessary.
 <p>
-<img src="https://imgur.com/0NXwFMW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/WcVQBe5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/WcVQBe5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/0NXwFMW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 
 Step 16: Access the Agent login page using the previously set up information at http://localhost/osTicket/scp/login.php. For end users, utilize the osTicket URL http://localhost/osTicket/.
