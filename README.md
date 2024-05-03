@@ -72,7 +72,7 @@ Step 7: Launch and execute IIS as an administrator, then access PHP Manager. Wit
 <img src="https://imgur.com/KyTLSVs.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/68pYzyt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-Step 8: Upon completing the osTicket file download, open the file and extract the "uploads" folder. Place the extracted folder into "C:\inetpub\wwwroot". 
+Step 8: Upon completing the osTicket file download, open the file and extract the contents of the "upload" folder into "C:\inetpub\wwwroot". 
 </p>
 <br />
 
