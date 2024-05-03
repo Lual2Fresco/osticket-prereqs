@@ -97,7 +97,7 @@ Step 12: Under the Security tab in the Properties window of "ost-config", click 
 <img src="https://imgur.com/Fyqq3Ud.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/xpk1lXx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/W5guuL2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 
-Step 13: Navigate back to IIS and locate "Sites" > "Default Web Site" > "osTicket". On the right-hand side, right-click on "Browse *:80". This action will display the screen depicted below. Proceed with the osTicket setup as prompted.
+Step 13: Navigate back to IIS and locate "Sites" > "Default Web Site" > "osTicket". On the right-hand side, click on "Browse *:80". This action will display the screen depicted below. Proceed with the osTicket setup as prompted.
 <p>
 
 <img src="https://imgur.com/0DYVomD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/Mu4R4xJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
