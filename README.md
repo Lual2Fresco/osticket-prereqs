@@ -27,7 +27,7 @@ This tutorial provides a detailed guide for setting up the open-source help desk
    - MySQL (https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link)
    - HeidiSQL (https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit)
  
-<img src="https://imgur.com/64svWK6.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SxttUZX.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 
 <h2>Installation Steps</h2>
@@ -85,33 +85,33 @@ Step 9: Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot". Locate t
 <img src="https://imgur.com/YR00J4S.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <br />
 
-Step 10: In IIS, navigate through the following sequence: IIS > Sites > Default Web Site > osTicket. Access PHP Manager from within osTicket. Scroll down to the "PHP Manager Enable or Disable Extension" section. Enable the extensions listed below.
+Step 10: In IIS, navigate through the following sequence: IIS > Sites > Default Web Site > osTicket. Access PHP Manager from within osTicket. Scroll down to the "PHP Manager Enable or Disable Extension" section. Enable the extensions: php_imap.dll, php_intl.dll, php_opcache.dll
 <p>
-<img src="https://imgur.com/oTPhSRa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/gP1Id1C.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/yixryG7.png" height="30%" width="30%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/2vGOoLZ.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/oTPhSRa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 Step 11: Proceed to the following directory: "This PC" > "Windows (C:)" > "inetpub" > "wwwroot" > "osTicket" > "include". Rename the "ost-sampleconfig" folder to "ost-config". Then, right-click on "ost-config", open Properties, navigate to Security, and choose Advanced. Disable Inheritance and remove all permissions.
 
 Step 12: Under the Security tab in the Properties window of "ost-config", click on Add. Type "Everyone" and select Check Names. Afterward, grant "Read" and "Execute" permissions to "Everyone".
 </p>
-<img src="https://imgur.com/Fyqq3Ud.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/xpk1lXx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/W5guuL2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/Fyqq3Ud.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/xpk1lXx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/MYQYFfm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 
 Step 13: Navigate back to IIS and locate "Sites" > "Default Web Site" > "osTicket". On the right-hand side, click on "Browse *:80". This action will display the screen depicted below. Proceed with the osTicket setup as prompted.
 <p>
 
-<img src="https://imgur.com/0DYVomD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/Mu4R4xJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/tbCAJlN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <br />
 
 Step 14: The final file to download is HeidiSQL. Create a username and password during setup, ensuring to remember or note down the information. After installation, open HeidiSQL, connect to the session, and proceed to create a new database titled "osTicket".
 <p>
-<img src="https://imgur.com/vIWDDtj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/4nonXjw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/CqGyD3y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/vIWDDtj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/UQLbaG5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
 Step 15: Input the database information obtained from HeidiSQL into the designated fields on the osTicket setup page. Click "Install", and upon successful completion, the final page should be displayed.
 </p>
-<img src="https://imgur.com/1mMMtB2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/QRVobLK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/1mMMtB2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/iDwas1j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 
 Cleanup (Optional): Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot" > "osTicket". Delete the "setup" folder if no longer needed. Additionally, return to the "ost-config" file, open its properties, and enable full control permissions as necessary.
@@ -120,9 +120,7 @@ Cleanup (Optional): Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroo
 </p>
 
 Step 16: Access the Agent login page using the previously set up information at http://localhost/osTicket/scp/login.php. For end users, utilize the osTicket URL http://localhost/osTicket/.
-<p>
-<img src="https://imgur.com/vIWDDtj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/4nonXjw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/CqGyD3y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
-</p>
+
 Step 17: Log in to osTicket!
 <p>
 <img src="https://imgur.com/BL4zEGX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/IayoADD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
