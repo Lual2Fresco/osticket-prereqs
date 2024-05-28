@@ -77,7 +77,7 @@ Step 8: Upon completing the osTicket file download, open the file and extract th
 <br />
 
 <p>
-<img src="https://imgur.com/PA5eGg0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/KqyEchz.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+ <img src="https://imgur.com/KqyEchz.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 Step 9: Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot". Locate the "upload" folder and rename it to "osTicket".
@@ -87,7 +87,7 @@ Step 9: Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot". Locate t
 
 Step 10: In IIS, navigate through the following sequence: IIS > Sites > Default Web Site > osTicket. Access PHP Manager from within osTicket. Scroll down to the "PHP Manager Enable or Disable Extension" section. Enable the extensions: php_imap.dll, php_intl.dll, php_opcache.dll
 <p>
-<img src="https://imgur.com/oTPhSRa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/zb9cB8E.png" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 Step 11: Proceed to the following directory: "This PC" > "Windows (C:)" > "inetpub" > "wwwroot" > "osTicket" > "include". Rename the "ost-sampleconfig" folder to "ost-config". Then, right-click on "ost-config", open Properties, navigate to Security, and choose Advanced. Disable Inheritance and remove all permissions.
