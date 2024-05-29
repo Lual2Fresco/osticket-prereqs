@@ -109,9 +109,9 @@ Step 14: The final file to download is HeidiSQL. Create a username and password 
 </p>
 <p>
 
-Step 15: Input the database information obtained from HeidiSQL into the designated fields on the osTicket setup page. Click "Install", and upon successful completion, the final page should be displayed.
+Step 15: Input the database information obtained from HeidiSQL into the designated fields on the osTicket setup page. Click "Install"at the bottom of the webpage, and upon successful completion, the final page should be displayed.
 </p>
-<img src="https://imgur.com/1mMMtB2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/iDwas1j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/sLTEPYH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://i.imgur.com/iDwas1j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 
 Cleanup (Optional): Navigate to "This PC" > "Windows (C:)" > "inetpub" > "wwwroot" > "osTicket". Delete the "setup" folder if no longer needed. Additionally, return to the "ost-config" file, open its properties, and enable full control permissions as necessary.
